@@ -15,6 +15,19 @@ if !exists(":Abolish")
   finish
 endif
 
+let s:save_cpo = &cpoptions
+set cpoptions&vim
+
 " }}}
 
-command Britishise runtime spell/britishise.vim
+function! s:activateSpelling()
+    setlocal spelllang+=en_gb
+    setlocal spell
+    Britishise
+endfunc
+
+command -nargs=0 Britishise runtime spell/britishise.vim
+command -nargs=0 ActivateBritishSpelling :call <SID>activateSpelling()
+
+let &cpoptions = s:save_cpo
+unlet s:save_cpo
