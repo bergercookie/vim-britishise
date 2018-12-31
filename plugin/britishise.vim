@@ -21,9 +21,11 @@ set cpoptions&vim
 " }}}
 
 function! s:activateSpelling()
-    setlocal spelllang+=en_gb
     setlocal spell
     Britishise
+    if &spelllang!~"en_gb"
+        setlocal spelllang+=en_gb
+    endif
 endfunc
 
 command -nargs=0 Britishise runtime spell/britishise.vim
