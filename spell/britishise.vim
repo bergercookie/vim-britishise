@@ -8,8 +8,8 @@ Abolish -buffer {col,behavi,fav,flav,hon,neighb,rum,lab}or{,s,ed,less,able,ing}
 "  e.g. liter -> litre
 "  suffixes: liter, liters
 Abolish -buffer {
-            \ cent,met,kilomet,lit,lust,mit,nit,goit,reconnoit,
-            \ saltpet,spect,theat,tit}er{,s} {}re{}
+            \cent,met,kilomet,lit,lust,mit,nit,goit,reconnoit,
+            \saltpet,spect,theat,tit}er{,s} {}re{}
 
 " -se -> -ce
 "  e.g. defense -> defence
