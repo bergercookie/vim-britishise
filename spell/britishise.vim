@@ -54,7 +54,6 @@ Abolish -buffer medieval mediaeval
 Abolish -buffer maneuv{re,res,red} manoeuv{er,ers,ered}
 
 " Miscellaneous
-Abolish -buffer check{,s,r,rs} cheque{,s,er,ers}
 Abolish -buffer chili chilli
 Abolish -buffer draft{,y,ed} draught{,y,ed}
 Abolish -buffer curb kerb
